@@ -68,3 +68,18 @@ TW_INCLUDE_DUMLOCK := true
 TW_INCLUDE_CRYPTO := true
 TW_NO_EXFAT_FUSE := true
 TW_NO_SCREEN_BLANK := true
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TW_NO_USB_STORAGE := true
+TW_INCLUDE_JB_CRYPTO := false
+TW_NO_SCREEN_BLANK := true
+TW_EXCLUDE_ENCRYPTED_BACKUPS := true
+TW_INCLUDE_L_CRYPTO := true
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+
+# LZMA and notes - comment out the line if you can't figure it out...
+# need - https://github.com/peterjc/backports.lzma
+# specifically, read - https://github.com/peterjc/backports.lzma/blob/master/README.md
+# - Also make sure you have python-dev installed.
+WITH_LZMA_OTA := true
